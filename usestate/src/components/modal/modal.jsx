@@ -8,7 +8,7 @@ const Modal = ({children, isOpen, onClose}) => {
     return(
         <div className={styles.modalWrapper} onClick={onClose}>
             <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
-                <button className={styles.closeButton} onClick={onClose}>Close</button>
+                <button className={styles.closeButton} onClick={onClose}>X</button>
                 <div className={styles.content}>
                     {children}
                 </div>
